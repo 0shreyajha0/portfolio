@@ -1,5 +1,14 @@
+:root {
+  --primary: #54b8ae;
+}
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
 }
 
 .container {
@@ -8,13 +17,20 @@ body {
   padding: 20px;
 }
 
-header {
-  background-color: hwb(257 8% 54%);
-  color: #dfce2e;
+.header {
+  background-color: #fff;
   padding: 10px;
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
 }
 
+.header-item {
+  font-weight: 600;
+}
+
+.header-item:hover {
+  color: var(--primary);
+}
 nav ul {
   list-style: none;
   padding: 0;
