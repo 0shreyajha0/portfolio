@@ -1,6 +1,8 @@
 :root {
   --primary: #54b8ae;
+  --grey: #e3e3e3;
 }
+/* over write classes */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -11,12 +13,37 @@ a {
   color: unset;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* components (reusable classes) */
+.button {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  font-weight: 600;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--grey);
+}
+
+/* utility classes */
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* header styles */
 .header {
   background-color: #fff;
   padding: 10px;
@@ -31,42 +58,29 @@ a {
 .header-item:hover {
   color: var(--primary);
 }
-nav ul {
-  list-style: none;
-  padding: 0;
+
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+}
+/* hero section style */
+.hero-section {
+  padding: 20px;
+  height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+.hero-container {
 }
 
-.section {
-  margin-top: 20px;
+.hero-text {
+  font-weight: 600;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
 }
 
-.about-me {
-  text-align: center;
-}
-
-.about-me img {
-  width: 150px;
-  border-radius: 50%;
-}
-
-.project {
-  margin-top: 20px;
-}
-
-.contact-me {
-  text-align: center;
-}
-
-.contact-me ul {
-  padding: 0;
-}
-
-.contact-me ul li {
-  display: inline;
-  margin-right: 20px;
+.hero-highlited-text {
+  color: var(--primary);
 }
