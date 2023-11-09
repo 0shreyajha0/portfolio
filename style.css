@@ -2,7 +2,9 @@
   --primary: #54b8ae;
   --grey: #e3e3e3;
 }
+
 /* over write classes */
+
 * {
   box-sizing: border-box;
 }
@@ -16,17 +18,16 @@ a {
   color: unset;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
 nav ul li {
   display: inline;
   margin-right: 20px;
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
 }
 
 /* components (reusable classes) */
+
 .button {
   background-color: transparent;
   color: var(--primary);
@@ -48,7 +49,9 @@ nav ul li {
 .button--outlined:hover {
   background-color: red;
 }
+
 /* utility classes */
+
 .container {
   width: 1100px;
   margin: 0 auto;
@@ -67,7 +70,9 @@ nav ul li {
 .margin-left-30 {
   margin-left: 30px;
 }
+
 /* header styles */
+
 .header {
   padding: 10px;
   display: flex;
@@ -86,7 +91,9 @@ nav ul li {
   display: flex;
   justify-content: flex-end;
 }
+
 /* hero section style */
+
 .hero-section {
   padding: 20px;
   height: calc(100vh - 110px);
@@ -138,7 +145,9 @@ nav ul li {
   height: 200px;
   width: 200px;
 }
+
 /* project section */
+
 .project-section {
 }
 
@@ -174,4 +183,20 @@ nav ul li {
 
 .project-description--reverse {
   flex-direction: row-reverse;
+}
+
+/* contact sectiom */
+
+.contact-container {
+}
+.contact-content {
+  padding: 60px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fotter-conatiner {
+  text-align: center;
+  border-top: 0.5px solid var(--primary);
 }
